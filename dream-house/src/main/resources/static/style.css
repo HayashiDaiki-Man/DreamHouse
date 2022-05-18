@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 100vh;
+    margin: auto 0;
+}
+.home a img{
+    position: relative;
+    height: 130px;
+    margin: 200px auto auto 380px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+}
+.home a img:hover {
+    transform: scale(1.01);
+    transition: .1s;
+}
+.home p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
