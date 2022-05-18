@@ -1,15 +1,19 @@
 @charset "utf-8";
 
 html {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: auto;
 }
 body {
+    margin: 0;
+}
+body .home{
+    height: 100vh;
+    box-sizing: border-box;
     background-image: url(../images/bg.png);
     background-size: cover;
-    background-position-x: center;
-    background-position-y: 100vh;
-    margin: auto 0;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
 }
 .home a img{
     position: relative;
@@ -17,13 +21,16 @@ body {
     margin: 200px auto auto 380px;
     background: rgba(255, 255, 255, .5);
     border-radius: 5px;
+    padding: 0;
+    align-items: center;
 }
 .home a img:hover {
     transform: scale(1.01);
     transition: .1s;
 }
 .home p {
-    text-align: center;
+    position: relative;
+    margin: 20px auto auto 380px;
     font-size: 24px;
     font-weight: bold;
 }
