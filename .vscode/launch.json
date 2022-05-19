@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DreamHouseApplication<dream-house>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.dreamhouse.DreamHouseApplication",
+            "projectName": "dream-house",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

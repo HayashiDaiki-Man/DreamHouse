@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
     <title>Selection</title>
 </head>
+
 <body>
     <div class="#">
 
     </div>
     <div class="select">
+        <!-- 1 -->
         <form action="@{/}" th:object="">
-            <label for="name" th:text="#{name}"></label>
-            <input type="radio">
-
+            <div class="contents">
+                <input type="radio" name="roof" th:field="">1
+                <label for="roof" th:text="#{roofMessage1}"></label>
+                <input type="radio" name="roof" th:field="">2
+                <label for="roof" th:text="#{roofMessage2}"></label>
+                <input type="radio" name="roof" th:field="">3
+                <label for="roof" th:text="#{roofMessage3}"></label>
+            </div>
+        </form>
+        <!-- 2 -->
+        <form action="@{/}" th:object="">
+            <div class="contents">
+                <input type="radio" name="house" th:field="">1
+                <label for="house" th:text="#{houseMessage1}"></label>
+                <input type="radio" name="house" th:field="">2
+                <label for="house" th:text="#{houseMessage2}"></label>
+                <input type="radio" name="house" th:field="">3
+                <label for="house" th:text="#{houseMessage3}"></label>
+            </div>
+        </form>
+        <!-- 3 -->
+        <form action="@{/}" th:object="">
+            <div class="contents">
+                <input type="radio" name="garden" th:field="">1
+                <label for="garden" th:text="#{gardenMessage1}"></label>
+                <input type="radio" name="garden" th:field="">2
+                <label for="garden" th:text="#{gardenMessage2}"></label>
+                <input type="radio" name="garden" th:field="">3
+                <label for="garden" th:text="#{gardenMessage3}"></label>
+            </div>
         </form>
     </div>
 </body>
+
 </html>

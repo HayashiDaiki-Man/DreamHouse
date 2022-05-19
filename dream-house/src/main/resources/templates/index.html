@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
     <title>DreamHouse</title>
 </head>
 
 <body>
     <div class="home">
         <div class="homeContents">
-            <a href="#"><img src="../images/doreamhouselogo.png" alt=""></a><br>
+            <a th:href="@{/selection}" method="get"><img src="images/doreamhouselogo.png" alt=""></a><br>
             <p>↑start on click</p>
         </div>
     </div>
