@@ -13,39 +13,10 @@
 
     </div>
     <div class="formContents">
-        <!-- 1 -->
-        <form action="@{/}" th:object="">
-            <div class="contents">
-                <input type="radio" name="roof" th:field="">1
-                <label for="roof" th:text="#{roofMessage1}"></label>
-                <input type="radio" name="roof" th:field="">2
-                <label for="roof" th:text="#{roofMessage2}"></label>
-                <input type="radio" name="roof" th:field="">3
-                <label for="roof" th:text="#{roofMessage3}"></label>
-            </div>
-        </form>
-        <!-- 2 -->
-        <form action="@{/}" th:object="">
-            <div class="contents">
-                <input type="radio" name="house" th:field="">1
-                <label for="house" th:text="#{houseMessage1}"></label>
-                <input type="radio" name="house" th:field="">2
-                <label for="house" th:text="#{houseMessage2}"></label>
-                <input type="radio" name="house" th:field="">3
-                <label for="house" th:text="#{houseMessage3}"></label>
-            </div>
-        </form>
-        <!-- 3 -->
-        <form action="@{/}" th:object="">
-            <div class="contents">
-                <input type="radio" name="garden" th:field="">1
-                <label for="garden" th:text="#{gardenMessage1}"></label>
-                <input type="radio" name="garden" th:field="">2
-                <label for="garden" th:text="#{gardenMessage2}"></label>
-                <input type="radio" name="garden" th:field="">3
-                <label for="garden" th:text="#{gardenMessage3}"></label>
-            </div>
-        </form>
+        <ul th:each="roofSelection : ${roofSelection}">
+            <li><input type="radio" name="roofs" th:value="${roofSelection.key}" th:text="${roofSelection.value}" />
+            </li>
+        </ul>
     </div>
 </body>
 
