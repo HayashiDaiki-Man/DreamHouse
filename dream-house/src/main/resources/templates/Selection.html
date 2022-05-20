@@ -4,19 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
     <title>Selection</title>
 </head>
 
 <body>
-    <div class="#">
+    <div class="selectionTitle">
+        
 
     </div>
     <div class="formContents">
-        <ul th:each="roofSelection : ${roofSelection}">
-            <li><input type="radio" name="roofs" th:value="${roofSelection.key}" th:text="${roofSelection.value}" />
-            </li>
+        <!-- roofSelection -->
+        <div class="roofSelect">
+          <p>質問（仮）</p>
+          <ul th:each="roofSelection : ${roofSelection}">
+              <li><label><input type="radio" name="roofs" th:value="${roofSelection.key}"
+                th:text="${roofSelection.value}" checked />
+            </label></li>
         </ul>
+    </div>
+    <!-- houseSelection -->
+    <div class="houseSelect">
+        <p>質問（仮）</p>
+        <ul th:each="houseSelection : ${houseSelection}">
+            <li><label><input type="radio" name="houses" th:value="${houseSelection.key}"
+                th:text="${houseSelection.value}" checked />
+            </label></li>
+        </ul>
+    </div>
+    <!-- gardenSelection -->
+    <div class="gardenSelect">
+        <p>質問（仮）</p>
+            <ul th:each="gardenSelection : ${gardenSelection}">
+                <li>
+                    <label><input type="radio" name="gardens" th:value="${gardenSelection.key}"
+                            th:text="${gardenSelection.value}" checked />
+                    </label>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 

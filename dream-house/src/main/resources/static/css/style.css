@@ -34,3 +34,12 @@ body .home{
     font-size: 24px;
     font-weight: bold;
 }
+
+/* selection.html */
+ul{
+    list-style: none;
+    display: flex;
+}
+label {
+    display: flex;
+}
