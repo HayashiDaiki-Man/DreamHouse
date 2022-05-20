@@ -27,7 +27,7 @@
     <div class="houseSelect">
         <p>質問（仮）</p>
         <ul th:each="houseSelection : ${houseSelection}">
-            <li><label><input type="radio" name="houses" th:value="${houseSelection.key}"
+            <li class=""><label><input type="radio" name="houses" th:value="${houseSelection.key}"
                 th:text="${houseSelection.value}" checked />
             </label></li>
         </ul>
