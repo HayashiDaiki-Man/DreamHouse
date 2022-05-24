@@ -36,10 +36,20 @@ body .home{
 }
 
 /* selection.html */
+
+.formContents,.selectionTitle {
+    margin-top: 82px;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
 ul{
     list-style: none;
     display: flex;
 }
 label {
+    display: flex;
+}
+.roofSelect,.houseSelect,.gardenSelect{
     display: flex;
 }

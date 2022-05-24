@@ -10,13 +10,12 @@
 
 <body>
     <div class="selectionTitle">
-        
-
+        <h1>3つの質問</h1>
     </div>
     <div class="formContents">
         <!-- roofSelection -->
+        <p>質問（仮）</p>
         <div class="roofSelect">
-          <p>質問（仮）</p>
           <ul th:each="roofSelection : ${roofSelection}">
               <li><label><input type="radio" name="roofs" th:value="${roofSelection.key}"
                 th:text="${roofSelection.value}" checked />
@@ -24,17 +23,17 @@
         </ul>
     </div>
     <!-- houseSelection -->
+    <p>質問（仮）</p>
     <div class="houseSelect">
-        <p>質問（仮）</p>
         <ul th:each="houseSelection : ${houseSelection}">
-            <li class=""><label><input type="radio" name="houses" th:value="${houseSelection.key}"
+            <li class="houseSelectionBox"><label><input type="radio" name="houses" th:value="${houseSelection.key}"
                 th:text="${houseSelection.value}" checked />
             </label></li>
         </ul>
     </div>
     <!-- gardenSelection -->
+    <p>質問（仮）</p>
     <div class="gardenSelect">
-        <p>質問（仮）</p>
             <ul th:each="gardenSelection : ${gardenSelection}">
                 <li>
                     <label><input type="radio" name="gardens" th:value="${gardenSelection.key}"
@@ -43,6 +42,7 @@
                 </li>
             </ul>
         </div>
+        <input type="submit">
     </div>
 </body>
 
