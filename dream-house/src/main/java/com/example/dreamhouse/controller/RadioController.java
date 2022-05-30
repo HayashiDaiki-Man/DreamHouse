@@ -16,17 +16,17 @@ public class RadioController {
         Map<String, String> houseSelection = new HashMap<String, String>();
         Map<String, String> gardenSelection = new HashMap<String, String>();
 
-        roofSelection.put("1", "roof1");
-        roofSelection.put("2", "roof2");
-        roofSelection.put("3", "roof3");
+        roofSelection.put("r1", "roof1");
+        roofSelection.put("r2", "roof2");
+        roofSelection.put("r3", "roof3");
         
-        houseSelection.put("1", "house1");
-        houseSelection.put("2", "house2");
-        houseSelection.put("3", "house3");
+        houseSelection.put("h1", "house1");
+        houseSelection.put("h2", "house2");
+        houseSelection.put("h3", "house3");
 
-        gardenSelection.put("1", "garden1");
-        gardenSelection.put("2", "garden2");
-        gardenSelection.put("3", "garden3");
+        gardenSelection.put("g1", "garden1");
+        gardenSelection.put("g2", "garden2");
+        gardenSelection.put("g3", "garden3");
 
         model.addAttribute("roofSelection", roofSelection);
         model.addAttribute("houseSelection", houseSelection);
