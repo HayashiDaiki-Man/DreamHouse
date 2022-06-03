@@ -38,7 +38,8 @@ public class RadioController {
     }
 
     @GetMapping("/result")
-    public String result(){
+    public String result(Model model){
+        
         return "result";
     }
 
