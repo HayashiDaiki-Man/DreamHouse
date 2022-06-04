@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,9 +39,13 @@ public class RadioController {
 
     }
 
-    @PostMapping("/selection")
-    public String result(@ModelAttribute Model model){
-        
+    @GetMapping("/result")
+    public String getResult(){
+        return "result";
+    }
+
+    @PostMapping("/result")
+    public String result(@ModelAttribute Model model){  
         return "result";
     }
 
